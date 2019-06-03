@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="homeStation.MainTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-06-03T11:03:53" hostname="apollo" time="0.0">
+  <properties/>
+  <testcase name="main" classname="homeStation.MainTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,41 @@
+plugins {
+    id 'java'
+    id "application"
+}
+
+group 'homeStation'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+
+mainClassName = "sensor.App"
+
+
+repositories {
+    mavenCentral()
+}
+
+jar {
+    manifest {
+        attributes "Main-Class": "$mainClassName"
+    }
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    implementation group: 'org.glassfish.jersey.media', name: 'jersey-media-json-jackson', version: '2.13'
+    implementation group: 'javax.xml.bind', name: 'jaxb-api', version: '2.3.0'
+    // https://mvnrepository.com/artifact/javax.ws.rs/javax.ws.rs-api
+    compile group: 'javax.ws.rs', name: 'javax.ws.rs-api', version: '2.1'
+    implementation group: 'org.glassfish.jersey.containers', name: 'jersey-container-grizzly2-http', version: '2.13'
+    implementation group: 'com.sun.jersey', name: 'jersey-grizzly', version: '1.18.2'
+    implementation group: 'org.glassfish.jersey.media', name: 'jersey-media-json-jackson', version: '2.13'
+    implementation group: 'javax.xml.bind', name: 'jaxb-api', version: '2.3.0'
+    implementation group: 'org.glassfish.jersey.bundles.repackaged', name: 'jersey-guava', version: '2.13'
+// https://mvnrepository.com/artifact/javax.activation/activation
+    compile group: 'javax.activation', name: 'activation', version: '1.1.1'
+
+    
+}
+
